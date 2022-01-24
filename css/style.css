@@ -1,0 +1,30 @@
+/* external font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.btn-slider {
+    color: #08bfc5 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 15px 30px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    border-radius: 15px;
+}
+
+.btn-slider:hover {
+    color: #ffffff !important;
+    background: #08bfc5;
+    border-color: #08bfc5 !important;
+    transition: all 0.4s ease 0s;
+}
