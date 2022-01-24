@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raisa's Marriage Center</title>
-    <!-- bootstrap cdn -->
+    <title>Raisa's Convention Center</title>
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/d9f2e7b9eb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <!-- navbar section -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"> <span class="nav-title">Raisa's Marriage Center</span></a>
+                <a class="navbar-brand" href="#home"> <span class="nav-title">Raisa's Convention Center</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -27,21 +29,25 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#Decoration">Decorations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link" href="#package">Our Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#catering">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- navbar end -->
 
-        <!-- Slider section-->
-        <section class="container-fluid rounded-3">
+        <!-- carousel section start-->
+        <section class="container-fluid rounded-3 mb-5" id="home">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -50,27 +56,27 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>The perfect place to find your partner</h1>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
-                            <div class="button_cont" align="center"><a class="btn-slider" href="" target="_blank" rel="nofollow noopener">Buy Now</a></div>
+                        <img class="img-fluid" src="images/banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1>Orginal and leading Marriage center</h1>
+                            <p>Offering Luxurious Banquet Halls, Business Conference Rooms, Business Centre</p>
+                            <a href="https://www.mscoastcoliseum.com/p/conventioncenter/plan/463" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>The perfect place to find your partner</h1>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            <div class="button_cont" align="center"><a class="btn-slider" href="" target="_blank" rel="nofollow noopener">Buy Now</a></div>
+                        <img class="img-fluid" src="images/banner-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <h1>The perfect venue for your next event</h1>
+                            <p>Equipped with a modern hygienic Kitchen, car parking facilities and a fantastic and cozy location in the central</p>
+                            <a href="https://www.mscoastcoliseum.com/p/conventioncenter/plan/463" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>The perfect place to find your partner</h1>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            <div class="button_cont" align="center"><a class="btn-slider" href="" target="_blank" rel="nofollow noopener">Buy Now</a></div>
+                        <img class="img-fluid" src="images/banner-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <h1>Tons of amenities and services</h1>
+                            <p>We can provide a wide range of outside catering to suit your personal needs.</p>
+                            <a href="https://www.mscoastcoliseum.com/p/conventioncenter/plan/463" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -85,27 +91,259 @@
             </div>
         </section>
 
-
+        <!-- carousel end -->
     </header>
 
     <main>
 
+        <!-- decoration start -->
+        <section class="pb-5 pt-3">
+
+            <!-- toast -->
+            <div class="toast-container position-absolute top-100 end-0 p-3 ">
+                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="icons/Vector.svg" class="rounded me-2" alt="...">
+                        <strong class="me-auto">Check Hot Packages</strong>
+                        <small>Just now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- toast -->
+            <section class="container" id="Decoration">
+                <h1 class="package-header my-5">Our Decorations</h1>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 ">
+                    <div class="col ">
+                        <div class="shadow h-100 decoration-border">
+                            <img class="img-fluid p-3" src="images/decoration.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-4 fw-bold">Western Decoration</h5>
+                            </div>
+                            <div class="d-flex justify-content-center pb-5">
+                                <a href="http://www.bdweddingplanners.com/wedding-decoration-and-stage.php" target="_blank"><button class="btn btn-package-special" role="button">Learn more</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="shadow h-100 decoration-border">
+                            <img class="img-fluid p-3" src=" images/decoration2.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center fs-4 fw-bold">Indian Decoration</h5>
+                            </div>
+                            <div class="d-flex justify-content-center pb-5">
+                                <a href="http://www.bdweddingplanners.com/wedding-decoration-and-stage.php" target="_blank"><button class="btn btn-package-special" role="button">Learn more</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="shadow h-100 decoration-border">
+                            <img class="img-fluid p-3" src="images/decoration3.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center fs-4 fw-bold">Corporate Event</h5>
+                            </div>
+                            <div class="d-flex justify-content-center pb-5">
+                                <a href="http://www.bdweddingplanners.com/wedding-decoration-and-stage.php" target="_blank"><button class="btn btn-package-special" role="button">Learn more</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+
+        <!-- decoration end -->
+
+
+        <!-- packages start -->
+
+        <section class="container mt-5 " id="package">
+            <h1 class="package-header my-5">Our Packages</h1>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 my-5">
+                <div class="col">
+                    <div class=" pb-5 mb-5 h-100">
+                        <div class="price-title p-5" id="package-text">
+                            <h1>$300</h1>
+                        </div>
+                        <div class="card-body" id="package-text">
+                            <h5 class="card-title">Business fair</h5>
+                            <p class="card-text">For most businesses event like book fair, craft fair.</p>
+                            <p><i class="fas fa-check"></i> Limited space access</p>
+                            <p><i class="fas fa-check"></i> Secuirty facility</p>
+                            <p><i class="fas fa-check"></i> Event support</p>
+                            <p><i class="fas fa-check"></i> Decoration design</p>
+                            <p><i class="fas fa-check"></i> Per day bill</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.event71.com/book-convention-center-in-dhaka/" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" pb-5 mb-5 h-100">
+                        <div class="price-title p-5" id="package-text">
+                            <h1>$500</h1>
+                        </div>
+                        <div class="card-body" id="package-text">
+                            <h5 class="card-title">Wedding basic</h5>
+                            <p class="card-text">For weddings with basic plan and limited item</p>
+                            <p><i class="fas fa-check"></i> Full space access</p>
+                            <p><i class="fas fa-check"></i> Food arrangement</p>
+                            <p><i class="fas fa-check"></i> Mangement support</p>
+                            <p><i class="fas fa-check"></i> Decoration design</p>
+                            <p><i class="fas fa-check"></i> Billed as shift</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.event71.com/book-convention-center-in-dhaka/" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="special-package shadow pb-5 mb-5">
+                        <div class="price-title p-5">
+                            <h1>$800</h1>
+                        </div>
+                        <!-- Badge -->
+                        <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
+                            Hot
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                        <!-- Badge -->
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding plus</h5>
+                            <p class="card-text">For most weddings with premium plans</p>
+                            <p><i class="fas fa-check"></i> Full space access</p>
+                            <p><i class="fas fa-check"></i> Buffet food</p>
+                            <p><i class="fas fa-check"></i> Premium Decoration</p>
+                            <p><i class="fas fa-check"></i> Dedicated team</p>
+                            <p><i class="fas fa-check"></i> Pay as plan</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.event71.com/book-convention-center-in-dhaka/" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="h-100 pb-5 mb-5">
+                        <div class="price-title p-5" id="package-text">
+                            <h1>$1200</h1>
+                        </div>
+                        <div class="card-body" id="package-text">
+                            <h5 class="card-title">Corporate event</h5>
+                            <p class="card-text">For most corporate business events</p>
+                            <p><i class="fas fa-check"></i> Full space access</p>
+                            <p><i class="fas fa-check"></i> Dedicated team</p>
+                            <p><i class="fas fa-check"></i> Buffet food</p>
+                            <p><i class="fas fa-check"></i> premium Decoration</p>
+                            <p><i class="fas fa-check"></i> Pay as plan</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.event71.com/book-convention-center-in-dhaka/" target="_blank"><button class="btn btn-package-special" role="button">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- packages end -->
+
+        <!-- rent-a-car -->
+
+        <section class="catering-section" id="catering">
+            <div class="container h-100  ">
+                <div class="row h-100 ">
+                    <div class="col-lg-6 col-md-12 ">
+                        <div class="d-flex flex-column justify-content-center h-100 align-items-start">
+                            <h1 class="display-3 text-white ">Our Catering Services</h1>
+                            <a href="https://alphacateringservices.com/" target="_blank"><button class="btn-catering" role="button ">Check Out</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ start -->
+        <section class="container my-5 p-5" id="faq">
+            <h1 class="package-header my-5">Frequenty Asked Questions</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                When does Raisa's Marriage Center open and close each day?
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our schedule is dictated by the events we have in the building each day. Our building typically is open for business by 6 a.m. each day. The building is locked each day after the close of the last event. Should you need access after hours, please let
+                                    your Event Manager know.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How is the GCCC promoting health and safety?
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Increased messaging is placed throughout the facility and through websites and social media. Each message reinforces physical distancing and promotes proper hygiene.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Where is lost & found?
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lost & found is located in our Public Safety office. You can fill out a lost & found form here. Public Safety can also be reached by contacting 614-827-2547.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How are the food & beverage locations/catering assisting with health and safety?
+                            </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    To further reduce touchpoints, Levy will continue to offer supplemental items such as sanitation stations, breath barriers, and directional signage as add-on services.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 faq-img">
+                    <img class="img-fluid" src="images/faq.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ end -->
+
     </main>
 
-    <footer>
+    <footer class="d-flex justify-content-between align-items-center p-5 bg-dark">
+        <div>
+            <small class="text-white">© 2020 Raisa's Marriage Center. All rights reserved</small>
+        </div>
+        <div>
+            <p class="text-white text-center">Get the App</p>
+            <a href="https://apps.apple.com/us/app/bharatmatrimony-marriage-app/id465923141" target="_blank"> <img src="icons/app-store-badge.svg" alt="" width="135" height="40"></a>
+            <a href="https://play.google.com/store/apps/details?id=io.yarsa.games.marriage&hl=en&gl=US" target="_blank"> <img src="icons/google-play-badge.svg" alt="" width="135" height="40"></a>
 
+        </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

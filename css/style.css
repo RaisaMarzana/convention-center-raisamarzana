@@ -8,23 +8,175 @@ body {
 .nav-title {
     font-weight: 700;
     font-size: 22px;
-    color: #ffffff;
+    color: #3E3E3E;
 }
 
-.btn-slider {
-    color: #08bfc5 !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 15px 30px;
+
+/* decoration */
+
+.decoration-border {
+    border-radius: 20px;
+}
+
+
+/* decoration end */
+
+
+/* package section */
+
+.special-package {
+    background-color: #3F87F5;
+    border-radius: 30px;
+    color: white;
+    transform: scale(1.15);
+}
+
+.btn-package-special {
     display: inline-block;
-    transition: all 0.4s ease 0s;
-    border-radius: 15px;
+    color: #058eb8;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 76px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 8px 44px 0 rgba(0, 0, 0, 0.1);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-slider:hover {
-    color: #ffffff !important;
-    background: #08bfc5;
-    border-color: #08bfc5 !important;
-    transition: all 0.4s ease 0s;
+.btn-package-special:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 20px 40px rgb(93 93 93 / 23%);
+}
+
+.package-header {
+    color: #231D4F;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#package-text {
+    color: #231D4F;
+}
+
+
+/* package section */
+
+
+/* Catering Section */
+
+.btn-catering {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 12px 34px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.btn-catering:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-catering:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.catering-section {
+    background-image: url('../images/catering.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+
+/* catering section end  */
+
+@media only screen and (max-width:1500px) {
+    .carousel-caption {
+        padding-bottom: 8%;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .carousel-caption h3 {
+        font-size: 32px;
+    }
+    .carousel-caption p {
+        font-size: 18px;
+    }
+    .btn-package-special {
+        padding: 0 56px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .carousel-caption p {
+        display: none;
+    }
+    .faq-img {
+        margin-top: 20px;
+    }
+    .btn-package-special {
+        padding: 0 56px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+    .carousel-caption {
+        padding-bottom: 6%;
+    }
+    .faq-img {
+        margin-top: 20px;
+    }
+    .btn-package-special {
+        padding: 0 46px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    #carouselFull {
+        display: none;
+    }
+    #about {
+        margin-top: 80px;
+    }
+    .faq-img {
+        margin-top: 20px;
+    }
+    .btn-package-special {
+        padding: 0 40px;
+        font-size: 14px;
+    }
 }
